@@ -1,0 +1,51 @@
+﻿<Window x:Class="PracticaAreas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PracticaAreas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="49*"/>
+            <ColumnDefinition Width="50*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Height="18" VerticalAlignment="Bottom" Margin="10,0,223.341,391">Area De Figuras Geometricas</TextBlock>
+        <TextBlock Margin="10,33,313.341,363">Rectangulo:</TextBlock>
+        <TextBlock Margin="10,56,345.341,342">Base:</TextBlock>
+        <TextBlock Margin="172,56,183.341,342">Altura:</TextBlock>
+        <TextBox x:Name="Rbase" Margin="10,77,299,309" RenderTransformOrigin="0.349,-0.68"></TextBox>
+        <TextBox x:Name="Raltura" Margin="172,77,137,309" RenderTransformOrigin="0.349,-0.68"></TextBox>
+        <Button x:Name="Calcular" Margin="287,77,47,309" RenderTransformOrigin="1.185,0.544" Click="Calcular_Click">Calcular</Button>
+        <TextBlock Margin="10,56,353,342" Grid.Column="1">Area:</TextBlock>
+        <TextBlock x:Name="Area" Margin="10,77,353,321" Grid.Column="1">00</TextBlock>
+
+        <TextBlock Margin="10,115,313,281" RenderTransformOrigin="0.56,2.959">Triangulo:</TextBlock>
+        <TextBlock Margin="10,138,345,260">Base:</TextBlock>
+        <TextBlock Margin="172,138,183,260">Altura:</TextBlock>
+        <TextBox x:Name="Tbase" Margin="10,159,299,227" RenderTransformOrigin="0.349,-0.68"></TextBox>
+        <TextBox x:Name="Taltura" Margin="172,159,137,227" RenderTransformOrigin="0.349,-0.68"></TextBox>
+        <Button x:Name="Calcular2" Margin="287,159,47,227" RenderTransformOrigin="1.185,0.544" Click="Calcular2_Click">Calcular</Button>
+        <TextBlock Margin="10,138,353,260" Grid.Column="1">Area:</TextBlock>
+        <TextBlock x:Name="Area2" Margin="10,159,353,239" Grid.Column="1">00</TextBlock>
+
+        <TextBlock Margin="10,197,313,199" RenderTransformOrigin="0.56,2.959">Circulo:</TextBlock>
+        <TextBlock Margin="10,220,345,178">Radio:</TextBlock>
+        <TextBox x:Name="Cradio" Margin="10,241,299,145" RenderTransformOrigin="0.349,-0.68"></TextBox>
+        <Button x:Name="Calcular3" Margin="287,241,47,145" RenderTransformOrigin="1.185,0.544" Click="Calcular3_Click">Calcular</Button>
+        <TextBlock Margin="10,220,353,178" Grid.Column="1">Area:</TextBlock>
+        <TextBlock x:Name="Area3" Margin="10,241,353,157" Grid.Column="1">00</TextBlock>
+
+        <TextBlock Margin="10,279,313,117" RenderTransformOrigin="0.56,2.959">Trapecio:</TextBlock>
+        <TextBlock Margin="10,302,299,96">Base Mayor:</TextBlock>
+        <TextBlock Margin="172,302,137,96">Base Menor:</TextBlock>
+        <TextBox x:Name="TBmayor" Margin="10,323,299,63" RenderTransformOrigin="0.349,-0.68"></TextBox>
+        <TextBox x:Name="TBmenor" Margin="172,323,137,63" RenderTransformOrigin="0.349,-0.68"></TextBox>
+        <Button x:Name="Calcular4" Margin="287,323,47,63" RenderTransformOrigin="1.185,0.544" Click="Calcular4_Click">Calcular</Button>
+        <TextBlock Margin="10,302,353,96" Grid.Column="1">Area:</TextBlock>
+        <TextBlock x:Name="Area4" Margin="10,323,353,75" Grid.Column="1">00</TextBlock>
+        <TextBlock Margin="10,361,299,37">Altura:</TextBlock>
+        <TextBox x:Name="TBaltura" Margin="10,382,299,4" RenderTransformOrigin="0.349,-0.68"/>
+    </Grid>
+</Window>
